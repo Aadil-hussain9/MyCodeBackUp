@@ -1,11 +1,7 @@
 import { NgModule } from "@angular/core";
 
-
-
-
-
 @NgModule({})
-export class ModelModule
+export class AdminModule
 {
     
 }

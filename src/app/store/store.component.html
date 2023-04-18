@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col bg-dark text-white p-2">
+            <span class="navbar-brand ml-2">
+             Volkswagen Online Shop
+            </span>
+        </div>        
+    </div>
+    <div class="row text-white">
+        <div class="col-3  p-2">
+         <div class = "d-grid gap 2">
+           <button class="btn btn-outline-primary">HOME</button>
+
+         </div>
+        </div>
+        <div class="col-9 p-2 text-dark">
+
+            <div *ngFor="let product of products" class="card m-1 p-1 bg-light">
+             
+                <h4>
+                    {{product.name}}
+                    <span class="badge rounded-pill bg-primary" style="float:right;">
+                        {{product.price | currency:"INR"}}
+                    </span>
+                </h4>
+
+                <div class = "card-text  bg-white p-1">
+                    {{product.description}}
+
+                </div>
+
+
+
+            </div>
+          
+        </div>
+    </div>
+</div>
