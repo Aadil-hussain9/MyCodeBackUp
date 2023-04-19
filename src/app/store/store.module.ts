@@ -6,11 +6,12 @@ import { CartSummaryComponent } from "./cartSummary.component";
 import { CartDetailComponent } from "./cartDetail.component";
 import { CheckoutComponent } from "./checkout.component";
 import { RouterModule } from "@angular/router";
+import { FormsModule } from "@angular/forms";
 
 
 
 @NgModule({
-    imports : [ModelModule, BrowserModule,RouterModule],
+    imports : [ModelModule, BrowserModule,RouterModule ,FormsModule],
     exports : [StoreComponent,CheckoutComponent,CartDetailComponent], //used by other module e.g AppModule is using Store Module
     declarations : [StoreComponent , CartSummaryComponent,CheckoutComponent,CartDetailComponent], //ref of all @component | @pipe | @Directive decorators
     providers : [] 
